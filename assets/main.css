@@ -181,7 +181,7 @@ img.test
 
 @media all, bookshop { .c-hero__inner { display: flex; align-items: center; } }
 
-@media only all and (max-width: 768px) { .c-hero__inner { flex-direction: row; } }
+@media only all and (max-width: 768px) { .c-hero__inner { flex-direction: column; } }
 
 @media all, bookshop { .c-hero__left, .c-hero__right { width: 50%; } }
 
