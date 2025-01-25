@@ -23,4 +23,4 @@ social:
 
 contacts:
 #- {name: 'Dr. Academia', title: 'Professor', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/contact.jpg'}
-- {email:'havenkim10@gmail.com', image: 'assets/img/contact.jpg'}
+- {email:'khaven@ucsd.edu', image: 'assets/img/contact.jpg'}

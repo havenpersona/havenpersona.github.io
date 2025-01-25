@@ -3,4 +3,4 @@ layout: home
 title: "Home"
 ---
 
-Thank you for visiting my website. This website is currently undergoing construction, with planned updates scheduled for June 2024. In the meantime, feel free to refer to my CV located in the upper right corner.
+I'm a first-year PhD student in Computer Science and Engineering at the University of California, San Diego, where I'm fortunate to work with Professor [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley). I'm interested in addressing problems at the intersection of music and machine learning.
