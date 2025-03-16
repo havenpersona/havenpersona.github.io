@@ -9,7 +9,7 @@ I'm a first-year PhD student in Computer Science and Engineering at UC San Diego
 You can always email me at khaven@ucsd.edu.
 
 ### In-person Communication
-I also welcome in-person communication. You can find me at my office in the CSE building at UCSD during my office hours (unless I’m sick, in a meeting, or attending a conference).
+I also welcome in-person communication for mentoring or collaboration requests. You can find me at my office in the CSE building at UCSD during my office hours (unless I’m sick, in a meeting, or attending a conference).
 
 My tentative **office hours (until March 26, 2025) are from 7:00 AM to 5:00 PM on Tuesdays, Wednesdays, Thursdays, Saturdays, and Sundays**. I update my office hours quarterly.
 
