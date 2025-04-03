@@ -14,7 +14,7 @@ I also welcome in-person communication for mentoring or collaboration requests. 
 My tentative **office hours (until March 26, 2025) are from 7:00 AM to 5:00 PM on Tuesdays, Wednesdays, Thursdays, Saturdays, and Sundays**. I update my office hours quarterly.
 
 ### Mentoring
-If you’re an master’s or undergraduate student at UCSD and want to work on a research project at the intersection of music and machine learning, I’m happy to discuss the possibility of mentoring you. You don’t need to bring your own research topic, and I don’t require a strong background in either machine learning or music. As long as you’re genuinely interested in research, I’m happy to support you.
+Since I’ve reached my maximum capacity and am currently mentoring several students, I’m unable to accept additional mentoring requests at this time. Thank you for your understanding.
 
 ### Collaboration
 I always welcome and appreciate opportunities for academic collaboration. Please feel free to email me if you have any ideas.
