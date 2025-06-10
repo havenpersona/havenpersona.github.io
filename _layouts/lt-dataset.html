@@ -1,0 +1,207 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean-English Lyric Translation Dataset</title>
+    <style>
+        .citation-box {
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .copy-btn:hover {
+            background: #0056b3;
+            transform: translateY(-1px);
+        }
+        
+        .copy-btn.copied {
+            background: #28a745;
+        }
+        
+        .download-section {
+            margin-top: 40px;
+        }
+        
+        .download-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .download-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .download-card.ossl {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .download-card.oes-pub {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .download-card.oes-com {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        .download-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .download-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .download-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .main-title {
+            color: #2c3e50;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        
+        .section-description {
+            color: #6c757d;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row g-5 mb-5">
+            <div class="col-md-12">
+                <h1>Lyric Translation Dataset</h1>
+                <br>
+                <h3>1. Korean-English Lyric Translation Dataset</h3>
+                <p>This dataset, presented at our LREC-COLING 2024 paper "K-pop Lyric Translation: Dataset, Analysis, and Neral Modelling", includes pairs of Korean and English lyrics for 1,000 songs, aligned line-by-line and section-by-section.</p>
+                <p>If you find this dataset to be useful for your research, please cite the following paper.</p>
+                
+                <!-- Citation Box -->
+                <div class="citation-box">
+                    <button class="copy-btn" onclick="copyCitation()">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                    <pre id="citation-text">@inproceedings{kim2024kpop,
+  title={K-pop Lyric Translation: Dataset, Analysis, and Neural Modelling},
+  author={Kim, Haven and Jung, Jongmin and Jeong, Dasaem and Nam, Juhan},
+  booktitle = {Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)},
+  year={2024},
+}</pre>
+                </div>
+                
+                <div>
+                    <h5> Dataset Download Request </h5>
+                    <p> Please send <a href="mailto:khaven@ucsd.edu" target="_blank">an email</a> with your signature attached to <a href="https://docs.google.com/document/d/1eLVq-ebFz1M1eb2IG_XcLZvaeyN8GSGFneK-9C8BiGg/edit?usp=sharing" target="_blank">this form</a>. By providing your signature, you indicate that you agree with the statements in the form.</p>
+</p>
+<br>
+<br>
+        <h3>2. English-Japanese-Korean Lyric Translation Dataset</h3>
+                <p>This dataset, used in our ISMIR 2023 paper "A Computational Evaluation Framework for Singable Lyric Translation", includes aligned English, Japanese, and Korean lyrics for 162 songs.</p>
+                
+                <p>If you find this dataset to be useful for your research, please cite the following paper.</p>
+                
+                <!-- Citation Box -->
+                <div class="citation-box">
+                    <button class="copy-btn" onclick="copyCitation()">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                    <pre id="citation-text">@misc{kim2023computationalevaluationframeworksingable,
+      title={A Computational Evaluation Framework for Singable Lyric Translation}, 
+      author={Haven Kim and Kento Watanabe and Masataka Goto and Juhan Nam},
+      year={2023},
+      eprint={2308.13715},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2308.13715}, 
+}</pre>
+                </div>
+                
+                <div>
+                    <h5> Dataset Download Request </h5>
+                    <p> Please send <a href="mailto:khaven@ucsd.edu" target="_blank">an email</a> with your signature attached to <a href="https://docs.google.com/document/d/1eLVq-ebFz1M1eb2IG_XcLZvaeyN8GSGFneK-9C8BiGg/edit?usp=sharing" target="_blank">this form</a>. By providing your signature, you indicate that you agree with the statements in the form.</p>
+</p>
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyCitation() {
+            const citationText = document.getElementById('citation-text').textContent;
+            navigator.clipboard.writeText(citationText).then(function() {
+                const copyBtn = document.querySelector('.copy-btn');
+                const originalText = copyBtn.innerHTML;
+                copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                copyBtn.classList.add('copied');
+                
+                setTimeout(function() {
+                    copyBtn.innerHTML = originalText;
+                    copyBtn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+        
+        function downloadFile(datasetType) {
+            const downloadLinks = {
+                'ossl-v1': 'https://your-server.com/downloads/ossl-v1.zip',
+                'oes-pub': 'https://your-server.com/downloads/oes-pub.zip',
+                'oes-com': 'https://your-server.com/downloads/oes-com.zip'
+            };
+            
+            const link = document.createElement('a');
+            link.href = downloadLinks[datasetType];
+            link.download = datasetType + '.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            alert(`${datasetType.toUpperCase()}`);
+        }
+    </script>
+</body>
+</html>
