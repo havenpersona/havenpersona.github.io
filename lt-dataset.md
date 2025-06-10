@@ -1,6 +1,6 @@
 ---
 layout: lt-dataset
-title: "Korean-English Lyric Translation Dataset"
+title: "Lyric Translation Dataset"
 ---
 
 
