@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>OSSL v1 | Haven Kim</title>
+  <link rel="stylesheet" href="/assets/libs/bootstrap/bootstrap.min.css">
+  <script defer src="/assets/libs/fontawesome/all.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/apple-icon-152x152.png">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+    <div class="col-lg-8 mx-auto p-3 py-md-5">
+      <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
+  <div>
+    <a href="https://havenpersona.github.io" style="text-decoration:none; color:black"><span class="fs-4 fw-bold">Haven Kim</span></a>
+  </div>
+  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+    
+      <a class="me-3 py-2 text-decoration-none" href="/cv">cv</a>
+    
+      <a class="me-3 py-2 text-decoration-none" href="/datasets">datasets</a>
+    
+  </nav>
+</header>
+
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSSL v1 Dataset</title>
+    <style>
+        .citation-box {
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .copy-btn:hover {
+            background: #0056b3;
+            transform: translateY(-1px);
+        }
+        
+        .copy-btn.copied {
+            background: #28a745;
+        }
+        
+        .download-section {
+            margin-top: 40px;
+        }
+        
+        .download-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .download-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .download-card.ossl {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .download-card.oes-pub {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .download-card.oes-com {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        .download-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .download-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .download-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .main-title {
+            color: #2c3e50;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        
+        .section-description {
+            color: #6c757d;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row g-5 mb-5">
+            <div class="col-md-12">
+                <h1>Open Screen Sound Library v1. (OSSL v1.)</h1>
+                <p>If you use this dataset for your research, please cite the following paper.</p>
+                
+                <!-- Citation Box -->
+                <div class="citation-box">
+                    <button class="copy-btn" onclick="copyCitation()">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                    <pre id="citation-text">@InProceedings{ossl2025,
+  title={Video-Guided Text-to-Music Generation Using Public Domain Movie Collections},
+  author={Kim, Haven and Novack, Zachary and Xu, Weihan and McAuley, Julian and Dong, Hao-Wen},
+  journal={Proceedings of the 26th International Society for Music Information Retrieval (ISMIR)},
+  year={2025}
+}</pre>
+                </div>
+                
+                <!-- Download Section -->
+                <div class="download-section">
+                    <h3>Download Datasets</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="#" class="download-card ossl" onclick="downloadFile('ossl-v1')">
+                                <i class="fas fa-database download-icon"></i>
+                                <div class="download-title">Download OSSL-v1</div>
+                                <div class="download-subtitle">Open Screen Sound Library v1</div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="download-card oes-pub" onclick="downloadFile('oes-pub')">
+                                <i class="fas fa-database download-icon"></i>
+                                <div class="download-title">Download OES-Pub</div>
+                                <div class="download-subtitle">OSSL Evaluation Set - Public</div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="download-card oes-com" onclick="downloadFile('oes-com')">
+                                <i class="fas fa-database download-icon"></i>
+                                <div class="download-title">Download OES-Com</div>
+                                <div class="download-subtitle">OSSL Evaluation Set - Commercial</div>
+                            </a>
+                        </div>
+                    </div>
+                <div class="download-section">
+                    <h3> Code </h3>
+                    <p>Training and evaluation code is available on <a href="https://github.com/havenpersona/ossl-v1" target="_blank">this webpage</a>.</p>
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyCitation() {
+            const citationText = document.getElementById('citation-text').textContent;
+            navigator.clipboard.writeText(citationText).then(function() {
+                const copyBtn = document.querySelector('.copy-btn');
+                const originalText = copyBtn.innerHTML;
+                copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                copyBtn.classList.add('copied');
+                
+                setTimeout(function() {
+                    copyBtn.innerHTML = originalText;
+                    copyBtn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+        
+        function downloadFile(datasetType) {
+            const downloadLinks = {
+                'ossl-v1': 'https://your-server.com/downloads/ossl-v1.zip',
+                'oes-pub': 'https://your-server.com/downloads/oes-pub.zip',
+                'oes-com': 'https://your-server.com/downloads/oes-com.zip'
+            };
+            
+            const link = document.createElement('a');
+            link.href = downloadLinks[datasetType];
+            link.download = datasetType + '.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            alert(`${datasetType.toUpperCase()}`);
+        }
+    </script>
+</body>
+</html>
+      <footer class="pt-5 my-5 text-muted border-top">
+  <div class="row">
+    <div class="col-md-6 text-end social-media-icons">
+      
+        <a href="https://github.com/havenpersona" class="ms-3 fs-5"><i class="fab fa-github"></i></a>
+      
+    </div>
+  </div>
+  <script async data-id="101390952" src="//static.getclicky.com/js"></script>
+</footer>
+
+    </div>
+  </body>
+</html>
