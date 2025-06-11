@@ -17,8 +17,3 @@ If you use this dataset for your research, please cite the following paper.
 }
 ```
 
-OSSL (Main)
-
-OES-Pub
-
-OES-Com

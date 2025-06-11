@@ -2,3 +2,6 @@ url: "https://havenpersona.github.io" # the base hostname & protocol for your si
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Haven Kim" # the name of your site, e.g. ACME Corp.
 description: ""
+permalink: pretty
+plugins:
+  - jekyll-sitemap
