@@ -6,10 +6,11 @@ title: "Datasets"
 
 ### Open Screen Sound Library v1. (OSSL v1.)
 
-Downloadable at [this webpage](./ossl_v1)
+Downloadable at [this webpage](./ossl-v1)
 
 ###### Related Publication
 - Haven Kim, Zachary Novack, Weihan Xu, Julian McAuley, Hao-Wen Dong. 2025. "Video-Guided Text-to-Music Generation Using Public Domain Movie Collections" Proceedings of the 26th International Society for Music Information Retrieval (ISMIR)
+
 
 
 ### Lyric Translation Dataset

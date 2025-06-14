@@ -7,7 +7,7 @@ I'm a first-year PhD student in Computer Science and Engineering at UC San Diego
 
 
 ### CV
-My CV is available on [this webpage](https://havenpersona.github.io/cv)
+My CV is available on [this webpage](./cv)
 
 ### Mentoring
 Since I’ve reached my maximum capacity and am currently mentoring several students, I’m unable to accept additional mentoring requests at this time. Thank you for your understanding.
