@@ -1,5 +1,7 @@
 featured:
 - {name: 'Haven Kim, Zachary Novack, Weihan Xu, Julian McAuely, Hao-Wen Dong. 2025. "Video-Guided Text-to-Music Generation Using Public Domain Movie Collections" Proceedings of the 26th International Society for Music Information Retrieval (ISMIR).', url: ''}
+- {name: 'Haven Kim, Jongmin Jung, Dasaem Jeong, Juhan Nam. 2024. ”K-pop Lyric Translation : Dataset, Analysis, and Neural Modelling.” The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)', url: 'https://arxiv.org/abs/2309.11093'}
+
 index:
 - {name: 'Haven Kim, Zachary Novack, Weihan Xu, Julian McAuely, Hao-Wen Dong. 2025. "Video-Guided Text-to-Music Generation Using Public Domain Movie Collections" Proceedings of the 26th International Society for Music Information Retrieval (ISMIR).', url: ''}
 - {name: 'Weihan Xu, Paul Pu Liang, Haven Kim, Julian McAuley, Taylor Berg-Kirkpatrick, Hao-Wen Dong. 2025. ”TeaserGen: Generating Teasers for Long Documentaries.” International Conference on Learning Representations (ICLR) 2025', url: 'https://arxiv.org/abs/2410.05586'}

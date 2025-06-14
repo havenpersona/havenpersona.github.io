@@ -3,5 +3,5 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Haven Kim" # the name of your site, e.g. ACME Corp.
 description: ""
 permalink: pretty
-plugins:
-  - jekyll-sitemap
+#plugins:
+#  - jekyll-sitemap

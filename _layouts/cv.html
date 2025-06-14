@@ -9,7 +9,7 @@ layout: default
     <h3 class="fw-bold border-bottom pb-3 mb-5">CV</h3>
     <div class="row g-5 mb-5">
       <div class="col-md-2">
-        <h4>Education</h4>
+        <h5>Education</h5>
       </div>
       <div class="col-md-10">
         {% for section in site.data.cv.education %}
@@ -20,7 +20,7 @@ layout: default
     </div>
     <div class="row g-5 mb-5">
       <div class="col-md-2">
-        <h4>Experience</h4>
+        <h5>Experience</h5>
       </div>
       <div class="col-md-10">
         {% for section in site.data.cv.experience %}
@@ -31,17 +31,18 @@ layout: default
     </div>
     <div class="row g-5 mb-5">
       <div class="col-md-2">
-        <h4>Publications</h4>
+        <h5>Selected Publications</h5>
       </div>
       <div class="col-md-10">
-        {% for item in site.data.cv.publications.index %}
+        <p><i>For a complete list of publications, please visit <a href="https://scholar.google.com/citations?user=r7oD_TQAAAAJ&hl=en">my Google Scholar profile</a></i><br></p>
+        {% for item in site.data.cv.publications.featured %}
         <p>• {{ item.name }} <a href="{{ item.url }}">[arxiv]</a></p>
         {% endfor %}
       </div>
     </div>
     <div class="row g-5 mb-5">
       <div class="col-md-2">
-        <h4>Invited Talk</h4>
+        <h5>Invited Talk</h5>
       </div>
       <div class="col-md-10">
         {% for section in site.data.cv.talk %}

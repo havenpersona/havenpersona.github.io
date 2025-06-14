@@ -11,7 +11,7 @@ Downloadable at [this webpage](https://havenpersona.github.io/ossl-v1)
 ###### Related Publication
 - Haven Kim, Zachary Novack, Weihan Xu, Julian McAuley, Hao-Wen Dong. 2025. "Video-Guided Text-to-Music Generation Using Public Domain Movie Collections" Proceedings of the 26th International Society for Music Information Retrieval (ISMIR)
 
-
+<br>
 
 ### Lyric Translation Dataset
 
