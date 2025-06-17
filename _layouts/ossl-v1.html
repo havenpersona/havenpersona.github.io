@@ -107,6 +107,22 @@ layout: default
             font-size: 1.1rem;
             margin-bottom: 30px;
         }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        video {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
     </style>
 </head>
 <body>
@@ -163,8 +179,142 @@ layout: default
                 </div>
             </div>
         </div>
-    </div>
+    
+    <h3>Demo</h3>
 
+                <h6>Movie Title and Year: </h6><p>AGENT RECON (2024)</p>
+                <h6>Text Prompt:</h6><p>A film soundtrack for a nervous scene. A recording progresses from keyboard with effects through classical strings to television theme music.</p>
+                <table>
+                    <tr>
+                        <th>Ground Truth</th>
+                        <th>S-Base</th>
+                        <th>S-Text</th>
+                        <th>S-Multi</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video controls>
+                                <source src="/resources/4a.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/4b.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/4c.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/4d.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>M-Base</th>
+                        <th>M-Text</th>
+                        <th>M-Multi</th>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/4e.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/4f.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/4g.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <h6>Movie Title and Year: </h6><p>MY PENGUIN FRIEND (2024)</p>
+                <h6>Text Prompt:</h6><p>A film soundtrack for a peaceful scene. The recording moves from marimba through female vocals with oboe to harpsichord trio.</p>
+                <table>
+                    <tr>
+                        <th>Ground Truth</th>
+                        <th>S-Base</th>
+                        <th>S-Text</th>
+                        <th>S-Multi</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video controls>
+                                <source src="/resources/6a.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/6b.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/6c.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/6d.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>M-Base</th>
+                        <th>M-Text</th>
+                        <th>M-Multi</th>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/6e.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/6f.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/6g.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        
+                    </tr>
+                </table>
+            </div>
     <script>
         function copyCitation() {
             const citationText = document.getElementById('citation-text').textContent;
