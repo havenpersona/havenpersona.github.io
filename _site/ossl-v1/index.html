@@ -35,6 +35,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSSL v1 Dataset</title>
     <style>
+
+.section {
+            margin-bottom: 2rem; /* 48px */
+        }
+        
+        /* 마지막 섹션은 하단 마진 제거 */
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* 섹션 제목 스타일 통일 */
+        .section h3 { /* 24px */
+            font-weight: 600;
+        }
+
         .citation-box {
             border: 2px solid #e9ecef;
             border-radius: 8px;
@@ -75,14 +90,14 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border: none;
             border-radius: 15px;
-            padding: 30px 20px;
+            padding: 30px 0px;
             text-align: center;
             transition: all 0.3s ease;
             cursor: pointer;
             color: white;
             text-decoration: none;
             display: block;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         
@@ -170,47 +185,58 @@
   year={2025}
 }</pre>
                 </div>
+                <br>
                 
-                <!-- Download Section -->
-                <div class="download-section">
-                    <h3>Download Datasets</h3>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a href="#" class="download-card ossl" onclick="downloadFile('ossl-v1')">
-                                <i class="fas fa-database download-icon"></i>
-                                <div class="download-title">Download OSSL-v1</div>
-                                <div class="download-subtitle">Open Screen Sound Library v1</div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#" class="download-card oes-pub" onclick="downloadFile('oes-pub')">
-                                <i class="fas fa-database download-icon"></i>
-                                <div class="download-title">Download OES-Pub</div>
-                                <div class="download-subtitle">OSSL Evaluation Set - Public</div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#" class="download-card oes-com" onclick="downloadFile('oes-com')">
-                                <i class="fas fa-database download-icon"></i>
-                                <div class="download-title">Download OES-Com</div>
-                                <div class="download-subtitle">OSSL Evaluation Set - Commercial</div>
-                            </a>
-                        </div>
-                    </div>
-                <div class="download-section">
-                    <h3> Code </h3>
-                    <p>Training and evaluation code is available on <a href="https://github.com/havenpersona/ossl-v1" target="_blank">this webpage</a>.</p>
-
+        <div class="section">
+            <h3>Download Datasets</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="download-card ossl" onclick="downloadFile('ossl-v1')">
+                        <i class="fas fa-database download-icon"></i>
+                        <div class="download-title">Download OSSL-v1</div>
+                        <div class="download-subtitle">Open Screen Sound Library v1</div>
+                    </a>
                 </div>
+                <div class="col-md-4">
+                    <a href="#" class="download-card oes-pub" onclick="downloadFile('oes-pub')">
+                        <i class="fas fa-database download-icon"></i>
+                        <div class="download-title">Download OES-Pub</div>
+                        <div class="download-subtitle">OSSL Evaluation Set - Public</div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="download-card oes-com" onclick="downloadFile('oes-com')">
+                        <i class="fas fa-database download-icon"></i>
+                        <div class="download-title">Download OES-Com</div>
+                        <div class="download-subtitle">OSSL Evaluation Set - Commercial</div>
+                    </a>
                 </div>
             </div>
         </div>
-    
-    <h3>Demo</h3>
 
-                <h6>Movie Title and Year: </h6><p>AGENT RECON (2024)</p>
-                <h6>Text Prompt:</h6><p>A film soundtrack for a nervous scene. A recording progresses from keyboard with effects through classical strings to television theme music.</p>
-                <table>
+        <!-- Samples Section -->
+        <div class="section">
+            <h3>Samples</h3>
+            <p>Downloadable samples from the OSSL dataset, which contain a video, its corresponding soundtrack, and metadata, are available at <a href="https://www.dropbox.com/scl/fi/q4qqcgpiokjjtk4cswx4y/samples.zip?rlkey=6onp35aptnr02ba17gz500ebx&st=z0dkfk7z&dl=0" target="_blank">this link</a>.</p>
+        </div>
+
+        <!-- Code Section -->
+        <div class="section">
+            <h3>Code</h3>
+            <p>Training and evaluation code is available on <a href="https://github.com/havenpersona/ossl-v1" target="_blank">this webpage</a>.</p>
+        </div>
+
+        <!-- Demo Section -->
+        <div class="section">
+            <h3>Demo</h3>
+            
+            <div class="demo-item">
+                <h6>Movie Title and Year:</h6>
+                <p>AGENT RECON (2024)</p>
+                <h6>Text Prompt:</h6>
+                <p>A film soundtrack for a nervous scene. A recording progresses from keyboard with effects through classical strings to television theme music.</p>
+                
+                <table class="table table-bordered">
                     <tr>
                         <th>Ground Truth</th>
                         <th>S-Base</th>
@@ -248,7 +274,6 @@
                         <th>M-Base</th>
                         <th>M-Text</th>
                         <th>M-Multi</th>
-                        
                     </tr>
                     <tr>
                         <td></td>
@@ -270,14 +295,17 @@
                                 Your browser does not support the video tag.
                             </video>
                         </td>
-                        
                     </tr>
                 </table>
-                <br>
-                <br>
-                <h6>Movie Title and Year: </h6><p>MY PENGUIN FRIEND (2024)</p>
-                <h6>Text Prompt:</h6><p>A film soundtrack for a peaceful scene. The recording moves from marimba through female vocals with oboe to harpsichord trio.</p>
-                <table>
+            </div>
+
+            <div class="demo-item">
+                <h6>Movie Title and Year:</h6>
+                <p>MY PENGUIN FRIEND (2024)</p>
+                <h6>Text Prompt:</h6>
+                <p>A film soundtrack for a peaceful scene. The recording moves from marimba through female vocals with oboe to harpsichord trio.</p>
+                
+                <table class="table table-bordered">
                     <tr>
                         <th>Ground Truth</th>
                         <th>S-Base</th>
@@ -315,7 +343,6 @@
                         <th>M-Base</th>
                         <th>M-Text</th>
                         <th>M-Multi</th>
-                        
                     </tr>
                     <tr>
                         <td></td>
@@ -337,10 +364,11 @@
                                 Your browser does not support the video tag.
                             </video>
                         </td>
-                        
                     </tr>
                 </table>
             </div>
+        </div>
+    </div>
     <script>
         function copyCitation() {
             const citationText = document.getElementById('citation-text').textContent;
