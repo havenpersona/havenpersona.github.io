@@ -3,8 +3,8 @@ menu:
 #- {name: 'publications', url: '/publications'}
 #- {name: 'courses', url: '/courses'}
 - {name: 'cv', url: '/cv'}
-
 - {name: 'datasets', url: '/datasets'}
+- {name: 'demo', url: '/demo'}
 
 #people:
 #- {name: 'Primary Investigator', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/primary-investigator.jpg', url: 'primary-investigator'}
@@ -18,10 +18,11 @@ menu:
 
 social:
 - {icon: 'github', link: 'https://github.com/havenpersona'}
+
 #- {icon: 'twitter', link: 'https://twitter.com/havenpersona'}
 #- {icon: 'instagram', link: 'https://instagram.com/paululele'}
 #- {icon: 'linkedin', link: 'https://linkedin.com/in/lenpaul'}
 
 contacts:
 #- {name: 'Dr. Academia', title: 'Professor', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/contact.jpg'}
-- {email:'khaven@ucsd.edu', image: 'assets/img/contact.jpg'}
+- {email:'khaven@ucsd.edu', icon: 'email'}

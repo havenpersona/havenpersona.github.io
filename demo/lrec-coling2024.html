@@ -1,41 +1,13 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <title>Lyric Translation Dataset | Haven Kim</title>
-  <link rel="stylesheet" href="/assets/libs/bootstrap/bootstrap.min.css">
-  <script defer src="/assets/libs/fontawesome/all.min.js"></script>
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/apple-icon-152x152.png">
-  <link rel="shortcut icon" href="/assets/favicon.ico">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-</head>
-
-  <body>
-    <div class="col-lg-8 mx-auto p-3 py-md-5">
-      <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
-  <div>
-    <a href="https://havenpersona.github.io" style="text-decoration:none; color:black"><span class="fs-4 fw-bold">Haven Kim</span></a>
-  </div>
-  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-    
-      <a class="me-3 py-2 text-decoration-none" href="/cv">cv</a>
-    
-      <a class="me-3 py-2 text-decoration-none" href="/datasets">datasets</a>
-    
-      <a class="me-3 py-2 text-decoration-none" href="/demo">demo</a>
-    
-  </nav>
-</header>
-
-      <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lyric Translation Dataset</title>
+    <title>K-pop Lyric Translation : Dataset, Analysis, and Neural Modelling</title>
     <style>
         .citation-box {
             border: 2px solid #e9ecef;
@@ -135,17 +107,30 @@
             font-size: 1.1rem;
             margin-bottom: 30px;
         }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            color: #f0f0f0;
+            font-weight: bold;
+        }
+        video {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
     </style>
 </head>
 <body>
     <div class="container my-5">
         <div class="row g-5 mb-5">
             <div class="col-md-12">
-                <h1>Lyric Translation Dataset</h1>
-                <br>
-                <h3>1. Korean-English Lyric Translation Dataset</h3>
-                <p>This dataset, presented at our LREC-COLING 2024 paper "K-pop Lyric Translation: Dataset, Analysis, and Neral Modelling", includes pairs of Korean and English lyrics for 1,000 songs, aligned line-by-line and section-by-section.</p>
-                <p>If you find this dataset to be useful for your research, please cite the following paper.</p>
+                <h1>K-pop Lyric Translation : Dataset, Analysis, and Neural Modelling</h1>
+                <p>If you find our resources useful for your research, please consider citing our paper.</p>
                 
                 <!-- Citation Box -->
                 <div class="citation-box">
@@ -160,44 +145,19 @@
 }</pre>
                 </div>
                 
-                <div>
-                    <h5> Dataset Download Request </h5>
-                    <p> Please send <a href="mailto:khaven@ucsd.edu" target="_blank">an email</a> with your signature attached to <a href="https://docs.google.com/document/d/1eLVq-ebFz1M1eb2IG_XcLZvaeyN8GSGFneK-9C8BiGg/edit?usp=sharing" target="_blank">this form</a>. By providing your signature, you indicate that you agree with the statements in the form.</p>
-</p>
-<br>
-<br>
-        <h3>2. English-Japanese-Korean Lyric Translation Dataset</h3>
-                <p>This dataset, used in our ISMIR 2023 paper "A Computational Evaluation Framework for Singable Lyric Translation", includes aligned English, Japanese, and Korean lyrics for 162 songs.</p>
-                
-                <p>If you find this dataset to be useful for your research, please cite the following paper.</p>
-                
-                <!-- Citation Box -->
-                <div class="citation-box">
-                    <button class="copy-btn" onclick="copyCitation()">
-                        <i class="fas fa-copy"></i> Copy
-                    </button>
-                    <pre id="citation-text">@misc{kim2023computationalevaluationframeworksingable,
-      title={A Computational Evaluation Framework for Singable Lyric Translation}, 
-      author={Haven Kim and Kento Watanabe and Masataka Goto and Juhan Nam},
-      year={2023},
-      eprint={2308.13715},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2308.13715}, 
-}</pre>
+               <div>
+                    <h3> Checkpoints </h3>
+                        <p> We're planning to release official checkpoints this year! (2025)</p>
                 </div>
-                
                 <div>
-                    <h5> Dataset Download Request </h5>
-                    <p> Please send <a href="mailto:khaven@ucsd.edu" target="_blank">an email</a> with your signature attached to <a href="https://docs.google.com/document/d/1eLVq-ebFz1M1eb2IG_XcLZvaeyN8GSGFneK-9C8BiGg/edit?usp=sharing" target="_blank">this form</a>. By providing your signature, you indicate that you agree with the statements in the form.</p>
-</p>
-
+                    <h3>Demo</h3>
+                        <p> We're planning to release official demo this year! (2025) </p>
                 </div>
                 </div>
             </div>
         </div>
-    </div>
-
+        
+        </div>
     <script>
         function copyCitation() {
             const citationText = document.getElementById('citation-text').textContent;
@@ -216,9 +176,9 @@
         
         function downloadFile(datasetType) {
             const downloadLinks = {
-                'ossl-v1': 'https://your-server.com/downloads/ossl-v1.zip',
-                'oes-pub': 'https://your-server.com/downloads/oes-pub.zip',
-                'oes-com': 'https://your-server.com/downloads/oes-com.zip'
+                'ossl-v1': 'https://www.dropbox.com/scl/fo/wxxrrlczzo3k1dpupewdo/AC0wp5whcEs9wagBnP8H_iQ?rlkey=n8axgcef01xjfg87a7th7yvjz&st=o9tf788b&dl=0',
+                'oes-pub': 'https://www.dropbox.com/scl/fo/9yvjsuy2hg6npes6ojj2m/AG79EdYYqefzl_e-l-Zc_qg?rlkey=y48u58ubk878burk8df8vvi8z&st=l0b4zpgv&dl=0',
+                'oes-com': 'https://www.dropbox.com/scl/fo/hmkrvinpr2jcif0xdvbkd/AO-7HdoziOl84_ccdXeoHrg?rlkey=jr689kdiv0u4ue58kmxl25zuj&st=cjko97i7&dl=0'
             };
             
             const link = document.createElement('a');
@@ -232,19 +192,4 @@
         }
     </script>
 </body>
-</html>
-      <footer class="pt-5 my-5 text-muted border-top">
-  <div class="row">
-    <div class="col-md-6 text-end social-media-icons">
-      
-        <a href="https://github.com/havenpersona" class="ms-3 fs-5"><i class="fab fa-github"></i></a>
-      
-      
-    </div>
-  </div>
-  <script async data-id="101390952" src="//static.getclicky.com/js"></script>
-</footer>
-
-    </div>
-  </body>
 </html>

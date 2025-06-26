@@ -1,6 +1,6 @@
 ---
 layout: ossl-v1
-title: "Open Screen Sound Library (OSSL) v1."
+title: "Open Screen Soundtrack Library (OSSL) v1."
 ---
 
 

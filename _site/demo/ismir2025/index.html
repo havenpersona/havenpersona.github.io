@@ -3,7 +3,7 @@
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Open Screen Soundtrack Library (OSSL) v1. | Haven Kim</title>
+  <title> | Haven Kim</title>
   <link rel="stylesheet" href="/assets/libs/bootstrap/bootstrap.min.css">
   <script defer src="/assets/libs/fontawesome/all.min.js"></script>
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -35,7 +35,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSSL v1 Dataset</title>
+    <title>Video-Guided Text-to-Music Generation Using Public Domain Movie Collections</title>
     <style>
         .citation-box {
             border: 2px solid #e9ecef;
@@ -142,7 +142,7 @@
             text-align: center;
         }
         th {
-            background-color: #f0f0f0;
+            color: #f0f0f0;
             font-weight: bold;
         }
         video {
@@ -157,8 +157,8 @@
     <div class="container my-5">
         <div class="row g-5 mb-5">
             <div class="col-md-12">
-                <h1>Open Screen Soundtrack Library v1. (OSSL v1.)</h1>
-                <p>If you find this dataset useful for your research, please consider citing our paper.</p>
+                <h1>Video-Guided Text-to-Music Generation Using Public Domain Movie Collections (ISMIR 2025)</h1>
+                <p>If you find our resources useful for your research, please consider citing our paper.</p>
                 
                 <!-- Citation Box -->
                 <div class="citation-box">
@@ -176,39 +176,153 @@
 }</pre>
                 </div>
                 
-                <!-- Download Section -->
-                <div class="download-section">
-                    <h3>Download Datasets</h3>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a href="#" class="download-card ossl" onclick="downloadFile('ossl-v1')">
-                                <i class="fas fa-database download-icon"></i>
-                                <div class="download-title">Download OSSL-v1</div>
-                                <div class="download-subtitle">Open Screen Soundtrack Library v1</div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#" class="download-card oes-pub" onclick="downloadFile('oes-pub')">
-                                <i class="fas fa-database download-icon"></i>
-                                <div class="download-title">Download OES-Pub</div>
-                                <div class="download-subtitle">OSSL Evaluation Set - Public</div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#" class="download-card oes-com" onclick="downloadFile('oes-com')">
-                                <i class="fas fa-database download-icon"></i>
-                                <div class="download-title">Download OES-Com</div>
-                                <div class="download-subtitle">OSSL Evaluation Set - Commercial</div>
-                            </a>
-                        </div>
-                    </div>
+               <div>
+            <h3> Code </h3>
+            <p>Training and evaluation code is available on <a href="https://github.com/havenpersona/ossl-v1" target="_blank">this webpage</a>.</p>
+
+        </div>
+        <div>
+            <h3>Demo</h3>
+
+                <h6>Movie Title and Year: </h6><p>AGENT RECON (2024)</p>
+                <h6>Text Prompt:</h6><p>A film soundtrack for a nervous scene. A recording progresses from keyboard with effects through classical strings to television theme music.</p>
+                <table>
+                    <tr>
+                        <th>Ground Truth</th>
+                        <th>S-Base</th>
+                        <th>S-Text</th>
+                        <th>S-Multi</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video controls>
+                                <source src="/resources/4a.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/4b.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/4c.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/4d.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>M-Base</th>
+                        <th>M-Text</th>
+                        <th>M-Multi</th>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/4e.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/4f.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/4g.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <h6>Movie Title and Year: </h6><p>MY PENGUIN FRIEND (2024)</p>
+                <h6>Text Prompt:</h6><p>A film soundtrack for a peaceful scene. The recording moves from marimba through female vocals with oboe to harpsichord trio.</p>
+                <table>
+                    <tr>
+                        <th>Ground Truth</th>
+                        <th>S-Base</th>
+                        <th>S-Text</th>
+                        <th>S-Multi</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video controls>
+                                <source src="/resources/6a.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/6b.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/6c.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/6d.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>M-Base</th>
+                        <th>M-Text</th>
+                        <th>M-Multi</th>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/6e.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/6f.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        <td>
+                            <video controls>
+                                <source src="/resources/6g.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+                        
+                    </tr>
+                </table>
+            </div>
                 
                 </div>
             </div>
         </div>
-    
-   
-            </div>
+        
+        </div>
     <script>
         function copyCitation() {
             const citationText = document.getElementById('citation-text').textContent;
