@@ -1,9 +1,9 @@
 featured:
-- {name: 'Haven Kim, Zachary Novack, Weihan Xu, Julian McAuely, Hao-Wen Dong. 2025. "Video-Guided Text-to-Music Generation Using Public Domain Movie Collections" Proceedings of the 26th International Society for Music Information Retrieval (ISMIR).', url: ''}
+- {name: 'Haven Kim, Zachary Novack, Weihan Xu, Julian McAuely, Hao-Wen Dong. 2025. "Video-Guided Text-to-Music Generation Using Public Domain Movie Collections" Proceedings of the 26th International Society for Music Information Retrieval (ISMIR).', url: 'https://www.arxiv.org/abs/2506.12573'}
 - {name: 'Haven Kim, Jongmin Jung, Dasaem Jeong, Juhan Nam. 2024. ”K-pop Lyric Translation : Dataset, Analysis, and Neural Modelling.” The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)', url: 'https://arxiv.org/abs/2309.11093'}
 
 index:
-- {name: 'Haven Kim, Zachary Novack, Weihan Xu, Julian McAuely, Hao-Wen Dong. 2025. "Video-Guided Text-to-Music Generation Using Public Domain Movie Collections" Proceedings of the 26th International Society for Music Information Retrieval (ISMIR).', url: ''}
+- {name: 'Haven Kim, Zachary Novack, Weihan Xu, Julian McAuely, Hao-Wen Dong. 2025. "Video-Guided Text-to-Music Generation Using Public Domain Movie Collections" Proceedings of the 26th International Society for Music Information Retrieval (ISMIR).', url: 'https://www.arxiv.org/abs/2506.12573'}
 - {name: 'Weihan Xu, Paul Pu Liang, Haven Kim, Julian McAuley, Taylor Berg-Kirkpatrick, Hao-Wen Dong. 2025. ”TeaserGen: Generating Teasers for Long Documentaries.” International Conference on Learning Representations (ICLR) 2025', url: 'https://arxiv.org/abs/2410.05586'}
 - {name: 'Haven Kim and Kahyun Choi. 2024. ”LyCon: Lyrics Reconstruction from the Bag-of-Words Using Large Language Models.” Late Breaking Demo in the 25th International Society for Music Information Retrieval Conference (ISMIR)', url: 'https://www.arxiv.org/abs/2408.14750'}
 - {name: 'Fang-Duo Tsai, Shih-Lun Wu, Haven Kim, Bo-Yu Chen, Hao-Chung Cheng, Yi-Hsuan Yang. 2024. ”Audio Prompt Adapter: Unleashing Music Editing Abilities for Text-to-Music with Lightweight Finetuning.” Proceedings of the 25th International Society for Music Information Retrieval (ISMIR).', url: 'https://arxiv.org/abs/2407.16564'}
