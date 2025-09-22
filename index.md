@@ -9,6 +9,9 @@ I'm a first-year PhD student in Computer Science and Engineering at UC San Diego
 ### CV
 My CV is available on [this webpage](./cv)
 
+### Contact
+You can always reach me via [my academic email](mailto:khaven@ucsd.edu). However, I respectfully ask that you not contact me regarding PhD admissions or my lab. I am not an expert on these topics, and I’m very sorry that I cannot be of help.
+
 ### Mentoring
 Since I’ve reached my maximum capacity and am currently mentoring several students, I’m unable to accept additional mentoring requests at this time. Thank you for your understanding.
 
