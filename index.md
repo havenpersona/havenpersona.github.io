@@ -3,7 +3,7 @@ layout: home
 title: "Home"
 ---
 
-I'm a first-year PhD student in Computer Science and Engineering at UC San Diego, where I'm incredibly fortunate to work with Professor [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley).
+I'm a second-year PhD student in Computer Science and Engineering at UC San Diego. I'm very fortunate to work with Professor [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley).
 
 
 ### CV
