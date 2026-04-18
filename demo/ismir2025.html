@@ -1,340 +1,79 @@
----
-layout: default
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video-Guided Text-to-Music Generation Using Public Domain Movie Collections</title>
-    <style>
-        .citation-box {
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-            position: relative;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-        
-        .copy-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #007bff;
-            border: none;
-            border-radius: 5px;
-            padding: 5px 10px;
-            cursor: pointer;
-            font-size: 12px;
-            transition: all 0.3s ease;
-        }
-        
-        .copy-btn:hover {
-            background: #0056b3;
-            transform: translateY(-1px);
-        }
-        
-        .copy-btn.copied {
-            background: #28a745;
-        }
-        
-        .download-section {
-            margin-top: 40px;
-        }
-        
-        .download-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border: none;
-            border-radius: 15px;
-            padding: 30px 20px;
-            text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            color: white;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        
-        .download-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-            color: white;
-            text-decoration: none;
-        }
-        
-        .download-card.ossl {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        
-        .download-card.oes-pub {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-        }
-        
-        .download-card.oes-com {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-        }
-        
-        .download-icon {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            display: block;
-        }
-        
-        .download-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        
-        .download-subtitle {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-        
-        .main-title {
-            color: #2c3e50;
-            font-weight: 300;
-            margin-bottom: 20px;
-        }
-        
-        .section-description {
-            color: #6c757d;
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            color: #f0f0f0;
-            font-weight: bold;
-        }
-        video {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video-Guided Text-to-Music Generation · Haven Kim</title>
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-    <div class="container my-5">
-        <div class="row g-5 mb-5">
-            <div class="col-md-12">
-                <h1>Video-Guided Text-to-Music Generation Using Public Domain Movie Collections (ISMIR 2025)</h1>
-                <p>If you find our resources useful for your research, please consider citing our paper.</p>
-                
-                <!-- Citation Box -->
-                <div class="citation-box">
-                    <button class="copy-btn" onclick="copyCitation()">
-                        <i class="fas fa-copy"></i> Copy
-                    </button>
-                    <pre id="citation-text">@article{kim2025ossl,
-  title = {Video-Guided Text-to-Music Generation Using Public Domain Movie Collections},
-  author = {Haven Kim and Zachary Novack and Weihan Xu and Julian McAuley and Hao-Wen Dong},
-  journal = {ISMIR 2025},
-  year = {2025},
-  url = {https://arxiv.org/abs/2506.12573}
-}</pre>
-                </div>
-                
-               <div>
-            <h3> Code </h3>
-            <p>Training and evaluation code is available on <a href="https://github.com/havenpersona/ossl-v1" target="_blank">this webpage</a>.</p>
+  <div class="wrap">
+    <header class="site-header">
+      <div class="site-name"><a href="../index.html">Haven Kim</a></div>
+      <nav class="site-nav">
+        <a href="../index.html">Home</a>
+        <a href="../demo.html" class="active">Demo</a>
+        <a href="../datasets.html">Datasets</a>
+      </nav>
+    </header>
 
-        </div>
-        <div>
-            <h3>Demo</h3>
-            <p>
-            <iframe width="480" height="360" 
-                src="https://www.youtube.com/embed/S0BMicbdzmg" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe>
-            </p>
-            <!--
-                <h6>Movie Title and Year: </h6><p>AGENT RECON (2024)</p>
-                <h6>Text Prompt:</h6><p>A film soundtrack for a nervous scene. A recording progresses from keyboard with effects through classical strings to television theme music.</p>
-                <table>
-                    <tr>
-                        <th>Ground Truth</th>
-                        <th>S-Base</th>
-                        <th>S-Text</th>
-                        <th>S-Multi</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <video controls>
-                                <source src="/resources/4a.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                        <td>
-                            <video controls>
-                                <source src="/resources/4b.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                        <td>
-                            <video controls>
-                                <source src="/resources/4c.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                        <td>
-                            <video controls>
-                                <source src="/resources/4d.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th>M-Base</th>
-                        <th>M-Text</th>
-                        <th>M-Multi</th>
-                        
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <video controls>
-                                <source src="/resources/4e.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                        <td>
-                            <video controls>
-                                <source src="/resources/4f.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                        <td>
-                            <video controls>
-                                <source src="/resources/4g.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                        
-                    </tr>
-                </table>
-                <br>
-                <br>
-                <h6>Movie Title and Year: </h6><p>MY PENGUIN FRIEND (2024)</p>
-                <h6>Text Prompt:</h6><p>A film soundtrack for a peaceful scene. The recording moves from marimba through female vocals with oboe to harpsichord trio.</p>
-                <table>
-                    <tr>
-                        <th>Ground Truth</th>
-                        <th>S-Base</th>
-                        <th>S-Text</th>
-                        <th>S-Multi</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <video controls>
-                                <source src="/resources/6a.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                        <td>
-                            <video controls>
-                                <source src="/resources/6b.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                        <td>
-                            <video controls>
-                                <source src="/resources/6c.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                        <td>
-                            <video controls>
-                                <source src="/resources/6d.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th>M-Base</th>
-                        <th>M-Text</th>
-                        <th>M-Multi</th>
-                        
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <video controls>
-                                <source src="/resources/6e.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                        <td>
-                            <video controls>
-                                <source src="/resources/6f.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                        <td>
-                            <video controls>
-                                <source src="/resources/6g.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </td>
-                        
-                    </tr>
-                </table>
-                -->
-            </div>
-                
-                </div>
-            </div>
-        </div>
-        
-        </div>
-    <script>
-        function copyCitation() {
-            const citationText = document.getElementById('citation-text').textContent;
-            navigator.clipboard.writeText(citationText).then(function() {
-                const copyBtn = document.querySelector('.copy-btn');
-                const originalText = copyBtn.innerHTML;
-                copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
-                copyBtn.classList.add('copied');
-                
-                setTimeout(function() {
-                    copyBtn.innerHTML = originalText;
-                    copyBtn.classList.remove('copied');
-                }, 2000);
-            });
-        }
-        
-        function downloadFile(datasetType) {
-            const downloadLinks = {
-                'ossl-v1': 'https://www.dropbox.com/scl/fo/wxxrrlczzo3k1dpupewdo/AC0wp5whcEs9wagBnP8H_iQ?rlkey=n8axgcef01xjfg87a7th7yvjz&st=o9tf788b&dl=0',
-                'oes-pub': 'https://www.dropbox.com/scl/fo/9yvjsuy2hg6npes6ojj2m/AG79EdYYqefzl_e-l-Zc_qg?rlkey=y48u58ubk878burk8df8vvi8z&st=l0b4zpgv&dl=0',
-                'oes-com': 'https://www.dropbox.com/scl/fo/hmkrvinpr2jcif0xdvbkd/AO-7HdoziOl84_ccdXeoHrg?rlkey=jr689kdiv0u4ue58kmxl25zuj&st=cjko97i7&dl=0'
-            };
-            
-            const link = document.createElement('a');
-            link.href = downloadLinks[datasetType];
-            link.download = datasetType + '.zip';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            
-            alert(`${datasetType.toUpperCase()}`);
-        }
-    </script>
+    <p style="font-size:0.88rem; margin-bottom:8px;"><a href="../demo.html">← Demo</a></p>
+    <h1 style="font-size:1.5rem; margin:0 0 6px;">Video-Guided Text-to-Music Generation Using Public Domain Movie Collections</h1>
+    <p style="color:#555; margin-bottom:18px;">ISMIR 2025 · Haven Kim, Zachary Novack, Weihan Xu, Julian McAuley, Hao-Wen Dong</p>
+
+    <section style="margin-top:0;">
+      <h2>Citation</h2>
+      <p style="font-size:0.95rem;">If you find our resources useful for your research, please consider citing our paper.</p>
+      <div class="citation-box">
+        <button class="copy-btn" onclick="copyCitation()">Copy</button>
+<pre id="citation-text">@article{kim2025ossl,
+  title  = {Video-Guided Text-to-Music Generation Using Public Domain Movie Collections},
+  author = {Haven Kim and Zachary Novack and Weihan Xu and Julian McAuley and Hao-Wen Dong},
+  journal= {ISMIR 2025},
+  year   = {2025},
+  url    = {https://arxiv.org/abs/2506.12573}
+}</pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Code</h2>
+      <p>
+        Training and evaluation code is available on
+        <a href="https://github.com/havenpersona/ossl-v1" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Demo Video</h2>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/S0BMicbdzmg"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div>© Haven Kim</div>
+    </footer>
+  </div>
+
+  <script>
+    function copyCitation() {
+      const t = document.getElementById('citation-text').textContent;
+      navigator.clipboard.writeText(t).then(function () {
+        const b = document.querySelector('.copy-btn');
+        const original = b.textContent;
+        b.textContent = 'Copied';
+        b.classList.add('copied');
+        setTimeout(function () {
+          b.textContent = original;
+          b.classList.remove('copied');
+        }, 1800);
+      });
+    }
+  </script>
 </body>
 </html>

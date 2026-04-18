@@ -1,201 +1,75 @@
----
-layout: default
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K-pop Lyric Translation : Dataset, Analysis, and Neural Modelling</title>
-    <style>
-        .citation-box {
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-            position: relative;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-        
-        .copy-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #007bff;
-            border: none;
-            border-radius: 5px;
-            padding: 5px 10px;
-            cursor: pointer;
-            font-size: 12px;
-            transition: all 0.3s ease;
-        }
-        
-        .copy-btn:hover {
-            background: #0056b3;
-            transform: translateY(-1px);
-        }
-        
-        .copy-btn.copied {
-            background: #28a745;
-        }
-        
-        .download-section {
-            margin-top: 40px;
-        }
-        
-        .download-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border: none;
-            border-radius: 15px;
-            padding: 30px 20px;
-            text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            color: white;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        
-        .download-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-            color: white;
-            text-decoration: none;
-        }
-        
-        .download-card.ossl {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        
-        .download-card.oes-pub {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-        }
-        
-        .download-card.oes-com {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-        }
-        
-        .download-icon {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            display: block;
-        }
-        
-        .download-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        
-        .download-subtitle {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-        
-        .main-title {
-            color: #2c3e50;
-            font-weight: 300;
-            margin-bottom: 20px;
-        }
-        
-        .section-description {
-            color: #6c757d;
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            color: #f0f0f0;
-            font-weight: bold;
-        }
-        video {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-pop Lyric Translation · Haven Kim</title>
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-    <div class="container my-5">
-        <div class="row g-5 mb-5">
-            <div class="col-md-12">
-                <h1>K-pop Lyric Translation : Dataset, Analysis, and Neural Modelling</h1>
-                <p>If you find our resources useful for your research, please consider citing our paper.</p>
-                
-                <!-- Citation Box -->
-                <div class="citation-box">
-                    <button class="copy-btn" onclick="copyCitation()">
-                        <i class="fas fa-copy"></i> Copy
-                    </button>
-                    <pre id="citation-text">@inproceedings{kim2024kpop,
-  title={K-pop Lyric Translation: Dataset, Analysis, and Neural Modelling},
-  author={Kim, Haven and Jung, Jongmin and Jeong, Dasaem and Nam, Juhan},
-  booktitle = {Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)},
-  year={2024},
+  <div class="wrap">
+    <header class="site-header">
+      <div class="site-name"><a href="../index.html">Haven Kim</a></div>
+      <nav class="site-nav">
+        <a href="../index.html">Home</a>
+        <a href="../demo.html" class="active">Demo</a>
+        <a href="../datasets.html">Datasets</a>
+      </nav>
+    </header>
+
+    <p style="font-size:0.88rem; margin-bottom:8px;"><a href="../demo.html">← Demo</a></p>
+    <h1 style="font-size:1.5rem; margin:0 0 6px;">K-pop Lyric Translation: Dataset, Analysis, and Neural Modelling</h1>
+    <p style="color:#555; margin-bottom:18px;">LREC-COLING 2024 · Haven Kim, Jongmin Jung, Dasaem Jeong, Juhan Nam</p>
+
+    <section style="margin-top:0;">
+      <h2>Citation</h2>
+      <p style="font-size:0.95rem;">If you find our resources useful for your research, please consider citing our paper.</p>
+      <div class="citation-box">
+        <button class="copy-btn" onclick="copyCitation()">Copy</button>
+<pre id="citation-text">@inproceedings{kim2024kpop,
+  title    = {K-pop Lyric Translation: Dataset, Analysis, and Neural Modelling},
+  author   = {Kim, Haven and Jung, Jongmin and Jeong, Dasaem and Nam, Juhan},
+  booktitle= {Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)},
+  year     = {2024}
 }</pre>
-                </div>
-                
-               <div>
-                    <h3> Checkpoints </h3>
-                        <p> We're planning to release official checkpoints this year! (2025)</p>
-                </div>
-                <div>
-                    <h3>Demo</h3>
-                        <p> <iframe width="480" height="270" 
-                src="https://www.youtube.com/embed/uD2z00-Ngbs" 
-                title="lrec-coling 2024" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe> </p>
-                </div>
-                </div>
-            </div>
-        </div>
-        
-        </div>
-    <script>
-        function copyCitation() {
-            const citationText = document.getElementById('citation-text').textContent;
-            navigator.clipboard.writeText(citationText).then(function() {
-                const copyBtn = document.querySelector('.copy-btn');
-                const originalText = copyBtn.innerHTML;
-                copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
-                copyBtn.classList.add('copied');
-                
-                setTimeout(function() {
-                    copyBtn.innerHTML = originalText;
-                    copyBtn.classList.remove('copied');
-                }, 2000);
-            });
-        }
-        
-        function downloadFile(datasetType) {
-            const downloadLinks = {
-                'ossl-v1': 'https://www.dropbox.com/scl/fo/wxxrrlczzo3k1dpupewdo/AC0wp5whcEs9wagBnP8H_iQ?rlkey=n8axgcef01xjfg87a7th7yvjz&st=o9tf788b&dl=0',
-                'oes-pub': 'https://www.dropbox.com/scl/fo/9yvjsuy2hg6npes6ojj2m/AG79EdYYqefzl_e-l-Zc_qg?rlkey=y48u58ubk878burk8df8vvi8z&st=l0b4zpgv&dl=0',
-                'oes-com': 'https://www.dropbox.com/scl/fo/hmkrvinpr2jcif0xdvbkd/AO-7HdoziOl84_ccdXeoHrg?rlkey=jr689kdiv0u4ue58kmxl25zuj&st=cjko97i7&dl=0'
-            };
-            
-            const link = document.createElement('a');
-            link.href = downloadLinks[datasetType];
-            link.download = datasetType + '.zip';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            
-            alert(`${datasetType.toUpperCase()}`);
-        }
-    </script>
+      </div>
+    </section>
+
+    <section>
+      <h2>Checkpoints</h2>
+      <p>We're planning to release official checkpoints this year (2025).</p>
+    </section>
+
+    <section>
+      <h2>Demo Video</h2>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/uD2z00-Ngbs"
+                title="LREC-COLING 2024 demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div>© Haven Kim</div>
+    </footer>
+  </div>
+
+  <script>
+    function copyCitation() {
+      const t = document.getElementById('citation-text').textContent;
+      navigator.clipboard.writeText(t).then(function () {
+        const b = document.querySelector('.copy-btn');
+        const original = b.textContent;
+        b.textContent = 'Copied';
+        b.classList.add('copied');
+        setTimeout(function () {
+          b.textContent = original;
+          b.classList.remove('copied');
+        }, 1800);
+      });
+    }
+  </script>
 </body>
 </html>

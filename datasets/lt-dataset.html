@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyric Translation Dataset · Haven Kim</title>
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <div class="site-name"><a href="../index.html">Haven Kim</a></div>
+      <nav class="site-nav">
+        <a href="../index.html">Home</a>
+        <a href="../demo.html">Demo</a>
+        <a href="../datasets.html" class="active">Datasets</a>
+      </nav>
+    </header>
+
+    <p style="font-size:0.88rem; margin-bottom:8px;"><a href="../datasets.html">← Datasets</a></p>
+    <h1 style="font-size:1.5rem; margin:0 0 18px;">Lyric Translation Datasets</h1>
+
+    <section style="margin-top:0;">
+      <h2>1. Korean–English Lyric Translation Dataset</h2>
+      <p>
+        This dataset, presented in our LREC-COLING 2024 paper
+        &ldquo;K-pop Lyric Translation: Dataset, Analysis, and Neural Modelling&rdquo;,
+        includes pairs of Korean and English lyrics for 1,000 songs, aligned line-by-line and section-by-section.
+      </p>
+      <p>If you find this dataset useful for your research, please cite:</p>
+      <div class="citation-box">
+        <button class="copy-btn" onclick="copyCitation('citation-text-1', this)">Copy</button>
+<pre id="citation-text-1">@inproceedings{kim2024kpop,
+  title    = {K-pop Lyric Translation: Dataset, Analysis, and Neural Modelling},
+  author   = {Kim, Haven and Jung, Jongmin and Jeong, Dasaem and Nam, Juhan},
+  booktitle= {Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)},
+  year     = {2024}
+}</pre>
+      </div>
+      <h3>Download Request</h3>
+      <p>
+        Please send <a href="mailto:khaven@ucsd.edu" target="_blank" rel="noopener">an email</a> with your signature attached to
+        <a href="https://docs.google.com/document/d/1eLVq-ebFz1M1eb2IG_XcLZvaeyN8GSGFneK-9C8BiGg/edit?usp=sharing" target="_blank" rel="noopener">this form</a>.
+        By providing your signature you indicate that you agree with the statements in the form.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. English–Japanese–Korean Lyric Translation Dataset</h2>
+      <p>
+        This dataset, used in our ISMIR 2023 paper
+        &ldquo;A Computational Evaluation Framework for Singable Lyric Translation&rdquo;,
+        includes aligned English, Japanese, and Korean lyrics for 162 songs.
+      </p>
+      <p>If you find this dataset useful for your research, please cite:</p>
+      <div class="citation-box">
+        <button class="copy-btn" onclick="copyCitation('citation-text-2', this)">Copy</button>
+<pre id="citation-text-2">@misc{kim2023computationalevaluationframeworksingable,
+  title        = {A Computational Evaluation Framework for Singable Lyric Translation},
+  author       = {Haven Kim and Kento Watanabe and Masataka Goto and Juhan Nam},
+  year         = {2023},
+  eprint       = {2308.13715},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL},
+  url          = {https://arxiv.org/abs/2308.13715}
+}</pre>
+      </div>
+      <h3>Download Request</h3>
+      <p>
+        Please send <a href="mailto:khaven@ucsd.edu" target="_blank" rel="noopener">an email</a> with your signature attached to
+        <a href="https://docs.google.com/document/d/1eLVq-ebFz1M1eb2IG_XcLZvaeyN8GSGFneK-9C8BiGg/edit?usp=sharing" target="_blank" rel="noopener">this form</a>.
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <div>© Haven Kim</div>
+    </footer>
+  </div>
+
+  <script>
+    function copyCitation(id, btn) {
+      const t = document.getElementById(id).textContent;
+      navigator.clipboard.writeText(t).then(function () {
+        const original = btn.textContent;
+        btn.textContent = 'Copied';
+        btn.classList.add('copied');
+        setTimeout(function () {
+          btn.textContent = original;
+          btn.classList.remove('copied');
+        }, 1800);
+      });
+    }
+  </script>
+</body>
+</html>
