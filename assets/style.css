@@ -222,6 +222,15 @@ section h3 {
   color: #555;
 }
 
+.card.card-highlight,
+.card.card-highlight:hover {
+  margin-bottom: 36px;
+  text-align: center;
+  background: #fffbeb;
+  border-color: #eedc9a;
+}
+.card-highlight .card-title { font-size: 1.05rem; text-wrap: balance; }
+
 /* ===== Citation box (detail pages) ===== */
 .citation-box {
   position: relative;
